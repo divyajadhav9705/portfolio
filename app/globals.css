@@ -33,6 +33,9 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
+    /* 🔥 Fix: Define a global color variable for gradients */
+    --color-primary: hsl(240, 5.9%, 10%);
   }
 
   .dark {
@@ -86,4 +89,9 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+
+ 
+  .gradient-bg {
+    background: radial-gradient(circle at center, var(--color-color) 0%, var(--color-color) 50%) no-repeat;
+ }
 }
